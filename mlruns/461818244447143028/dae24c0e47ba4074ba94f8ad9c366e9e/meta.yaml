@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/guill/OneDrive/Documentos/MLFlow/mlruns/461818244447143028/dae24c0e47ba4074ba94f8ad9c366e9e/artifacts
+end_time: 1743028851739
+entry_point_name: ''
+experiment_id: '461818244447143028'
+lifecycle_stage: active
+run_id: dae24c0e47ba4074ba94f8ad9c366e9e
+run_name: big-smelt-599
+run_uuid: dae24c0e47ba4074ba94f8ad9c366e9e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743028848255
+status: 3
+tags: []
+user_id: guill

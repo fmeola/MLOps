@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/guill/OneDrive/Documentos/MLFlow/mlruns/461818244447143028/d36ed5481b6744a5b2080d6d60f1d6a8/artifacts
+end_time: 1742850912899
+entry_point_name: ''
+experiment_id: '461818244447143028'
+lifecycle_stage: active
+run_id: d36ed5481b6744a5b2080d6d60f1d6a8
+run_name: bold-mule-392
+run_uuid: d36ed5481b6744a5b2080d6d60f1d6a8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742850910015
+status: 3
+tags: []
+user_id: guill

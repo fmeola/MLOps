@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/guill/OneDrive/Documentos/MLFlow/mlruns/461818244447143028/b7c28f4cf47f4d8fab89795822af4610/artifacts
+end_time: 1742850833163
+entry_point_name: ''
+experiment_id: '461818244447143028'
+lifecycle_stage: active
+run_id: b7c28f4cf47f4d8fab89795822af4610
+run_name: handsome-colt-837
+run_uuid: b7c28f4cf47f4d8fab89795822af4610
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742850830187
+status: 3
+tags: []
+user_id: guill

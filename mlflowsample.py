@@ -1,5 +1,4 @@
-# MLFlow sample
-
+# MLFlow sample 2
 import mlflow
 import mlflow.sklearn
 import matplotlib.pyplot as plt

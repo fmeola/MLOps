@@ -26,3 +26,7 @@ jobs:
     - name: Run flake8 on mlflowsample.py
       run: |
         flake8 mlflowsample.py
+
+    - name: Run mlflowsample.py
+      run: python mlflowsample.py
+      

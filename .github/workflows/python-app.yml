@@ -20,8 +20,9 @@ jobs:
 
     - name: Install dependencies
       run: |
-        python -r pip install
+        python -m pip install --upgrade pip
         pip install flake8
+        pip install -r requirements.txt
 
     - name: Run flake8 on mlflowsample.py
       run: |

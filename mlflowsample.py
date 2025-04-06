@@ -16,7 +16,7 @@ import webbrowser
 import threading
 import time
 import subprocess
-
+import os
 
 def entrenar_modelo_iris():
     mlflow.set_experiment("clasificacion_iris_detallada")
@@ -79,4 +79,5 @@ def abrir_mlflow_ui():
 
 if __name__ == "__main__":
     entrenar_modelo_iris()
-    abrir_mlflow_ui()
+    if os.getenv("GITHUB_ACTIONS") != "true":
+        abrir_mlflow_ui()

@@ -97,3 +97,4 @@ if __name__ == "__main__":
     
     # Lanzar UI de MLflow
     abrir_mlflow_ui()
+  

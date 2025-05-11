@@ -1,0 +1,8 @@
+
+name: simple-mlflow-env
+dependencies:
+  - python=3.8
+  - scikit-learn
+  - pip
+  - pip:
+      - mlflow

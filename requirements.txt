@@ -4,3 +4,5 @@ pandas
 numpy
 seaborn
 apache-airflow
+evidently
+

@@ -6,6 +6,8 @@ services:
       - "5000:5000"
     environment:
       - MLFLOW_TRACKING_URI=http://0.0.0.0:5000
+      - MLFLOW_BACKEND_STORE_URI=mlruns
+      - MLFLOW_DEFAULT_ARTIFACT_ROOT=mlruns
     volumes:
       - ./mlruns:/mlflow/mlruns
     command: mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root /mlflow/mlruns --host 0.0.0.0

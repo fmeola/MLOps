@@ -11,4 +11,7 @@ __pycache__/
 
 # Ignorar archivos de logs
 *.log
+data/
+mlruns/
+mlflow.db
 

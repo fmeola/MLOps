@@ -1,5 +1,5 @@
-# MLFlow sample 2
-# https://www.youtube.com/watch?v=06sZHfKTZuY
+# MLFlow sample 3
+
 import mlflow
 import mlflow.sklearn
 import matplotlib.pyplot as plt

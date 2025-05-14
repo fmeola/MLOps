@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Probar Modelo ML</title>
+</head>
+<body>
+  <h2>Predicción del Modelo</h2>
+  <p>Ingresá las features como una lista de listas (ej: <code>[[1.2], [3.5]]</code>):</p>
+  <textarea id="input" rows="4" cols="50">[[1.2], [3.5]]</textarea><br><br>
+  <button onclick="enviar()">Enviar a /predict</button>
+
+  <h3>Respuesta:</h3>
+  <pre id="resultado"></pre>
+
+  <script>
+    async function enviar() {
+      const entrada = document.getElementById("input").value;
+      let parsed;
+      try {
+        parsed = JSON.parse(entrada);
+      } catch (e) {
+        document.getElementById("resultado").textContent = "Error: El formato JSON no es válido.";
+        return;
+      }
+
+      const response = await fetch("http://localhost:7000/predict", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ features: parsed })
+      });
+
+      const data = await response.json();
+      document.getElementById("resultado").textContent = JSON.stringify(data, null, 2);
+    }
+  </script>
+</body>
+</html>

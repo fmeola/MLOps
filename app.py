@@ -1,3 +1,4 @@
+
 import uvicorn
 import mlflow
 import numpy as np
@@ -7,6 +8,17 @@ from typing import List
 
 # Crear la aplicación FastAPI
 app = FastAPI(title="Modelo ML API", description="API para servir predicciones del modelo de MLflow")
+
+# Acá va la configuración de CORS
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # O limitá a ["http://localhost:8000"] si querés
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Cargar el modelo al iniciar la aplicación
 # Reemplaza "models:/nombre_modelo/version" con tu ruta real
@@ -35,3 +47,4 @@ def predict(request: PredictionRequest):
 @app.get("/health")
 def health():
     return {"status": "ok"}
+

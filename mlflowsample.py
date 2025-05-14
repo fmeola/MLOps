@@ -21,7 +21,11 @@ import os
 
 
 def entrenar_modelo_iris():
+
+
     mlflow.set_experiment("clasificacion_iris_detallada")
+
+
 
     iris = load_iris()
     X, y = iris.data, iris.target
@@ -29,6 +33,9 @@ def entrenar_modelo_iris():
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.2, random_state=42
     )
+
+
+
 
     scaler = StandardScaler()
     X_train_scaled = scaler.fit_transform(X_train)

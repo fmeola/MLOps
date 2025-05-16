@@ -22,7 +22,7 @@ app.add_middleware(
 
 # Cargar el modelo al iniciar la aplicación
 # Reemplaza "models:/nombre_modelo/version" con tu ruta real
-model = mlflow.pyfunc.load_model("models:/Ridge/1")
+model = mlflow.pyfunc.load_model("models:/ridge_model_v1/8")
 
 # Definir el esquema de la solicitud
 class PredictionRequest(BaseModel):

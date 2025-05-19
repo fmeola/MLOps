@@ -4,5 +4,5 @@ pandas
 numpy
 seaborn
 apache-airflow
-evidently
+evidently==0.6.7
 
